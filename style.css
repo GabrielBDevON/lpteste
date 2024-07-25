@@ -1,0 +1,283 @@
+/* Fontes */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+
+:root{
+    --cor1:#59D5E0;
+    --cor2:#f4538a;
+    --cor3:#faa300;
+    --cor4:#ffffff;
+    --cor5:#b5f6fc;
+    --cor6:#2eb7c4;
+    --cor7:#e04d7f;
+}
+
+/* Imagens */
+
+#menu-hamburguer{
+    width: 3rem;
+    margin-left: 1rem;
+    margin-right: 5rem;
+}
+
+#logotipo{
+    height: 10vh;
+}
+
+#dog{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.banho-tosa{
+    width: 11rem;
+    height: auto;
+    max-height: 8rem;
+    border-radius: 17px 0px 17px 0px;
+}
+
+.persona1{
+    width: 1rem;
+    height: auto;
+}
+
+/* Corpo */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--cor1);
+}
+
+#menu{
+    display: none;
+    position: absolute;
+    width: 80vw;
+    height: 15rem;
+    margin-top: 305px; 
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    box-shadow: var(--cor6) 5px 12px 3px;
+    background-color: var(--cor1);
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    height: 10rem;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    /*height: 4rem;*/
+    width: 80vw;
+    padding:1.5rem 1.2rem;
+    font-family: 'Sarabun';
+    font-weight: 600;
+    font-size: 1.3rem;
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+li:hover{
+    background-color:var(--cor6) ;
+}
+
+main{
+    background-color: var(--cor2);
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    gap: 25px; 
+}
+
+.container-card{
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    width: 90%;
+    border-radius: 17px;
+    background-color: var(--cor3);
+    box-shadow: var(--cor7) 10px 10px 1px;
+    gap: 20px;
+}
+
+.teste{
+    display: flex;
+    flex-direction: column;
+}
+
+.teste2{
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    font-family: 'Sarabun';
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--cor4); 
+}
+
+h2{
+   width: 90%;
+   margin: auto;
+   font-family: 'Sarabun';
+   font-weight: 700;
+   font-size: 1.1rem;
+   color: var(--cor4);
+   text-align: justify;
+}
+
+.avaliacao{
+    background-color: var(--cor4);
+    padding: 1.5rem 0rem;
+}
+
+
+.card{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor4);
+    width: 85%;
+    height: 4rem;
+    margin: 0px;
+    margin-top: 1rem;
+    border-radius: 0px 14px 14px 0px;
+    padding-left: 0.5rem;
+    
+}
+
+.card-avaliacao{
+    display:flex ;
+    color: var(--cor2);
+}
+
+
+.container-avaliacao{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    border-radius: 17px;
+    background-color: var(--cor2);
+}
+
+.card-avaliacao-persona{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    
+}
+
+/* .card-avaliacao-persona-macro{
+    border: solid 1px white;
+    width: 90%;
+    height: 50%;
+} */
+
+.comentario{
+    padding-left: 1rem;
+}
+
+.estrela{
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bordateste{
+    position: absolute;
+    margin-top: 1rem;
+    width: 90%;
+    height: 70%;
+    border: solid 2px white;
+    border-radius: 17px;
+    
+}
+
+.foto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    gap: 5px;
+    padding: 0.2rem;
+    padding-right: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 17px;
+    background-color: var(--cor4);
+    z-index: 1;
+}
+
+#persona1{
+    display: block;
+    width: 30px;
+    height:30px;
+    background-image: url(assets/Images/Persona/person1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#persona2{
+    display: block;
+    width: 30px;
+    height:30px;
+    background-image: url(assets/Images/Persona/person2.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#persona3{
+    display: block;
+    width: 30px;
+    height:30px;
+    background-image: url(assets/Images/Persona/person5.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+h3{
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: 'Inconsolata';
+    font-weight: 700;
+}
+
+h4{
+    font-family: 'Sarabun';
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--cor4);
+} 
